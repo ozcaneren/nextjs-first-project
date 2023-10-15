@@ -27,7 +27,7 @@ const Tabs = () => {
 
   return (
     <div className="p-3 my-3 w-full bg-emerald-300 dark:bg-indigo-600">
-      <div className="container mx-auto w-[1400px] flex justify-between items-center">
+      <div className="container mx-auto md:w-[1400px] flex justify-between items-center">
         {menu.map((item, index) => (
           <Link href={item.link} key={index} className="text-xl font-semibold">
             {item.name}

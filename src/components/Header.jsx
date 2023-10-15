@@ -7,9 +7,9 @@ export default function Header() {
       <div className="bg-amber-500 dark:bg-rose-600 p-2 rounded-xl">
         App
       </div>
-      <div className="flex flex-1 items-center gap-2 border dark:border-gray-600 p-2 rounded-lg">
+      <div className="flex flex-none md:flex-1 items-center gap-2 border dark:border-gray-600 p-2 rounded-lg">
         <input
-          className="outline-none flex-1 bg-transparent"
+          className="outline-none flex-none md:flex-1 bg-transparent max-w-[200px]"
           placeholder="search area"
           type="text"
         />
