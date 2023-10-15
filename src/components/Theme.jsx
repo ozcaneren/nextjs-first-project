@@ -12,17 +12,21 @@ const Theme = () => {
     setMounted(true);
   }, []);
 
+  const toggleTheme = () => {
+    setTheme(theme === 'dark' ? 'light' : 'dark');
+  };
 
   return (
     <div className='cursor-pointer'>
       {
         mounted && (
-          <div onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
-            <PiWebhooksLogo size={25}/>
-          </div>
+          theme === 'dark' ? (
+            <PiWebhooksLogo className="rotate-45" size={25} onClick={toggleTheme} />
+          ) : (
+            <PiWebhooksLogo className="" size={25} onClick={toggleTheme} />
+          )    
         )
       }
-
     </div>
   );
 }
