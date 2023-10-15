@@ -2,6 +2,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Providers from "@/app/Providers";
 import Tabs from "@/components/Tabs";
+import Bars from "@/components/Bars";
 
 export const metadata = {
   title: "Create Next App",
@@ -14,7 +15,7 @@ export default function RootLayout({ children }) {
       <body>
         <Providers>
           <Header />
-          <Tabs />
+          <Bars />
           {children}
         </Providers>
       </body>

@@ -18,6 +18,9 @@ const Character = ({ character }) => {
           <p className="text-center text-xl font-bold w-[160px] md:w-full truncate md:text-clip">{character.name}</p>
           <p className="text-center text-xl">{character.species}</p>
           <p className="text-center text-lg">{character.gender}</p>
+          <p className="text-center text-lg">{character.origin.name}</p>
+          <p className="text-center text-lg">{character.location.name}</p>
+
         </div>
       </div>
     </div>

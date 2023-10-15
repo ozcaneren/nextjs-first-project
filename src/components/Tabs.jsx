@@ -15,7 +15,7 @@ const Tabs = () => {
     {
       name: "Dead",
       url: "dead",
-    },
+    }
   ];
 
   const menu = [
