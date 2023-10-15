@@ -9,7 +9,7 @@ const Character = ({ character }) => {
   return (
     <div onClick={() => router.push(`/character/${character.id}`)} className="flex justify-center items-center">
       <div className="md:w-[400px] md:h-[450px] h-[330px]">
-        <div className="flex flex-col py-2 bg-transparent p-2 rounded-lg border border-gray-200 dark:border-gray-700 justify-center items-center">
+        <div className="flex flex-col md:py-2 bg-transparent md:p-0 p-2 rounded-lg border border-gray-200 dark:border-gray-700 justify-center items-center">
           <img
             src={character.image}
             alt={character.name}
