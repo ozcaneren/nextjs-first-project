@@ -21,7 +21,7 @@ const Page = async ({ params }) => {
             className="rounded-xl w-[240px] h-[240px] md:w-[360px] md:h-[360px]"
           />
         </div>
-        <div className="flex flex-col ml-12">
+        <div className="flex flex-col md:ml-12">
           <p className="text-center text-4xl mt-4 md:mt-0 md:text-6xl mb-8">
             {res.name}
           </p>
